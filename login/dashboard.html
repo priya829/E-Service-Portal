@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+    <title>Add Product </title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+    />
+  
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      
+      .active {
+        background-color: #4CAF50;
+      }
+      </style>
+  </head>
+
+  <body>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+    
+    
+    </ul>
+    <div class="row tm-content-row">
+      <div class="tm-block-col tm-col-avatar">
+        <div class="tm-bg-primary-dark tm-block tm-block-avatar">
+          <h2 class="tm-block-title">USER 1</h2>
+          <div class="tm-avatar-container">
+            <img
+              src="img/avatar.png"
+              alt="Avatar"
+              class="tm-avatar img-fluid mb-4"
+            /><span style="color:rgb(255, 255, 255);font-weight:bold">
+            Contact no. 98********<br>Email Id:priyarautuyg4@fhgfa.com<br><br></span>
+            <a href="#" class="tm-avatar-delete-link">
+              <i class="far fa-trash-alt tm-product-delete-icon"></i>
+            </a>
+          </div>
+          <button class="btn btn-primary btn-block text-uppercase">
+            Upload New Photo
+          </button>
+        </div>
+      </div>
+    
+    <div class="container tm-mt-big tm-mb-big">
+      <div class="row">
+        <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto">
+          <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="tm-block-title d-inline-block">Add Product</h2>
+              </div>
+            </div>
+            <div class="row tm-edit-product-row">
+              <div class="col-xl-6 col-lg-6 col-md-12">
+                <form action="#" class="tm-edit-product-form">
+                  <div class="form-group mb-3">
+                    <label
+                      for="name"
+                      >Product Name
+                    </label>
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      class="form-control validate"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label
+                      for="description"
+                      >Description</label
+                    >
+                    <textarea
+                      class="form-control validate"
+                      rows="3"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label
+                      for="category"
+                      >Category</label
+                    >
+                    <select
+                      class="custom-select tm-select-accounts"
+                      id="category"
+                    >
+                      <option selected>Select category</option>
+                      <option value="1">Hardware</option>
+                      <option value="2">Daily Use Items</option>
+                      <option value="3">Others</option>
+                    </select>
+                  </div>
+                  <div class="row">
+                      <div class="form-group mb-3 col-xs-12 col-sm-6">
+                          <label
+                            for="expire_date"
+                            >Estimated Return time
+                          </label>
+                          <input
+                            id="expire_date"
+                            name="expire_date"
+                            type="text"
+                            class="form-control validate"
+                            data-large-mode="true"
+                          />
+                        </div>
+                        <div class="form-group mb-3 col-xs-12 col-sm-6">
+                          <label
+                            for="stock"
+                            >Units In Stock
+                          </label>
+                          <input
+                            id="stock"
+                            name="stock"
+                            type="text"
+                            class="form-control validate"
+                            required
+                          />
+                        </div>
+                  </div>
+                  
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
+                <div class="tm-product-img-dummy mx-auto">
+                  <i
+                    class="fas fa-cloud-upload-alt tm-upload-icon"
+                    onclick="document.getElementById('fileInput').click();"
+                  ></i>
+                </div>
+                <div class="custom-file mt-3 mb-3">
+                  <input id="fileInput" type="file" style="display:none;" />
+                  <input
+                    type="button"
+                    class="btn btn-primary btn-block mx-auto"
+                    value="UPLOAD PRODUCT IMAGE"
+                    onclick="document.getElementById('fileInput').click();"
+                  />
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-block text-uppercase">Add Product Now</button>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+          <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-overflow">
+              <h2 class="tm-block-title">Notification List</h2>
+              <div class="tm-notification-items">
+                  <div class="media tm-notification-item">
+                      <div class="tm-gray-circle"><img src="img/notification-01.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                      <div class="media-body">
+                          <p class="mb-2"><b>Ramesh sent you borrow request <a href="#"
+                                  class="tm-notification-link">product updates</a>. Check new orders.</p>
+                          <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                      </div>
+                  </div>
+                  <div class="media tm-notification-item">
+                      <div class="tm-gray-circle"><img src="img/notification-02.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                      <div class="media-body">
+                        <p class="mb-2"><b>Suresh sent you borrow request <a href="#"
+                          class="tm-notification-link">product updates</a>. Check new orders.</p>
+                  <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                      </div>
+                  </div>
+                  <div class="media tm-notification-item">
+                      <div class="tm-gray-circle"><img src="img/notification-03.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                      <div class="media-body">
+                        <p class="mb-2"><b>Kamlesh sent you borrow request <a href="#"
+                          class="tm-notification-link">product updates</a>. Check new orders.</p>
+                  <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                      </div>
+                  </div>
+                  <div class="media tm-notification-item">
+                      <div class="tm-gray-circle"><img src="img/notification-01.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                      <div class="media-body">
+                        <p class="mb-2"><b>Rajat sent you borrow request <a href="#"
+                          class="tm-notification-link">product updates</a>. Check new orders.</p>
+                  <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                      </div>
+                  </div>
+                  <div class="media tm-notification-item">
+                      <div class="tm-gray-circle"><img src="img/notification-02.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                      <div class="media-body">
+                        <p class="mb-2"><b>Shravan sent you borrow request <a href="#"
+                          class="tm-notification-link">product updates</a>. Check new orders.</p>
+                  <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                      </div>
+                  </div>
+                  <div class="media tm-notification-item">
+                      <div class="tm-gray-circle"><img src="img/notification-03.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                      <div class="media-body">
+                        <p class="mb-2"><b>Rashid sent you borrow request <a href="#"
+                          class="tm-notification-link">product updates</a>. Check new orders.</p>
+                  <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                      </div>
+                  </div>
+                  <div class="media tm-notification-item">
+                      <div class="tm-gray-circle"><img src="img/notification-01.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                      <div class="media-body">
+                        <p class="mb-2"><b>Shrey sent you borrow request <a href="#"
+                          class="tm-notification-link">product updates</a>. Check new orders.</p>
+                  <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                      </div>
+                  </div>
+                  <div class="media tm-notification-item">
+                      <div class="tm-gray-circle"><img src="img/notification-02.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                      <div class="media-body">
+                        <p class="mb-2"><b>Sunil sent you borrow request <a href="#"
+                          class="tm-notification-link">product updates</a>. Check new orders.</p>
+                  <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                      </div>
+                  </div>
+                  <div class="media tm-notification-item">
+                      <div class="tm-gray-circle"><img src="img/notification-03.jpg" alt="Avatar Image" class="rounded-circle"></div>
+                      <div class="media-body">
+                        <p class="mb-2"><b>Shubhash sent you borrow request <a href="#"
+                          class="tm-notification-link">product updates</a>. Check new orders.</p>
+                  <span class="tm-small tm-text-color-secondary">6h ago.</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="container mt-5">
+        <div class="row tm-content-row">
+
+            <div class="tm-bg-primary-dark tm-block tm-block-products">
+              <div class="tm-product-table-container">
+                <table class="table table-hover tm-table-small tm-product-table" id="tb">
+                  <thead >
+                    <tr>
+                      <th scope="col">&nbsp;</th>
+                      <th scope="col">PRODUCT NAME</th>
+                      <th scope="col">UNIT Available</th>
+                      <th scope="col">IN STOCK</th>
+                      <th scope="col">Estimated Return DATE</th>
+                      <th scope="col">&nbsp;</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"></th>
+                      <td class="tm-product-name">Screw Driver</td>
+                      <td>4</td>
+                      <td>3</td>
+                      <td>12/04/2021</td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td class="tm-product-name">Drill Machine</td>
+                      <td>4</td>
+                      <td>3</td>
+                      <td>12/04/2021</td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td class="tm-product-name">Hammer</td>
+                      <td>4</td>
+                      <td>3</td>
+                      <td>12/04/2021</td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td class="tm-product-name">Stairs</td>
+                      <td>4</td>
+                      <td>3</td>
+                      <td>12/04/2021</td>
+                     
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td class="tm-product-name">Saw</td>
+                      <td>4</td>
+                      <td>3</td>
+                      <td>12/04/2021</td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td class="tm-product-name">Pipewrench</td>
+                      <td>4</td>
+                      <td>3</td>
+                      <td>12/04/2021</td>
+                      
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td class="tm-product-name">Clamp</td>
+                      <td>4</td>
+                      <td>3</td>
+                      <td>12/04/2021</td>
+                     
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td class="tm-product-name">Cutter</td>
+                      <td>4</td>
+                      <td>3</td>
+                      <td>12/04/2021</td>
+                      <!-- <td>
+                        <a href="#" class="tm-product-delete-link">
+                          <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                        </a>
+                      </td> -->
+                    </tr>
+                    
+                  
+                  </tbody>
+                </table>
+              </div>
+          <div class="con">
+              <input type="text" id="input-box" >
+              <input type="number" placeholder="UNites Available" id="avail">
+              <input type="number" placeholder="In stock" id="instock">
+              <input type="date" placeholder="Return date" id="date">
+              <button id="input-box-btn" onclick="myfun()">add</button>
+            </div>
+            </div>
+          </div>
+   
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+   
+  
+    <script src="js/bootstrap.min.js"></script>
+  
+    <script>
+      function myfun(){
+        var data = document.getElementById("input-box").value;
+        console.log(data);
+        var date = document.getElementById("date").value;
+        console.log(date);
+        var instock = document.getElementById("instock").value;
+        console.log(instock);
+        var avail = document.getElementById("avail").value;
+        console.log(avail);
+        var tab = document.getElementById("tb");
+        var row = tab.insertRow(1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        cell2.innerHTML = data;
+        cell3.innerHTML = instock;
+        cell4.innerHTML = avail;
+        cell5.innerHTML = date;
+        // tab.appendChild(data);
+      }
+    </script>
+   
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+   
+  
+    <script src="js/bootstrap.min.js"></script>
+  
+    
+  </body>
+
+
+</html>
